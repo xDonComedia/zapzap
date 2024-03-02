@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido KKKKKKKKKKKKKKKK</title>
+    <style>
+        body {
+            background-color: #00601e;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        .heart {
+            font-size: 50px;
+            color: #1aff00;
+            cursor: pointer;
+        }
+
+        #nao {
+            font-size: 24px;
+            color: #333;
+            background-color: #ff0000;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Um Pedido KKKKKKKKK</h1>
+        <p>Olá, uma otima manhã, tarde ou noite n sei que horas vai ver isso</p>
+        <p>Vc pode perguntar tudo isso, só pra isso? sim pq fiquei com vergonha de pedir diretamente</p>
+        <p>Passa o zapzap?</p>
+        <a href='https://wa.me/+5579988727604'><p class="chat" onclick="mostrarResposta()">&#128172</p></a>
+        <button id="nao" onmouseover="mudarPosicao()">Não</button>
+        <p id="resposta" style="display: none;"></p>
+    </div>
+    <script>
+        function mostrarResposta() {
+            document.getElementById('resposta').style.display = 'block';
+            document.getElementById('resposta').innerHTML = 'Sim! Eu aceito, vou passar';
+        }
+
+        function mudarPosicao() {
+            const buttonNao = document.getElementById('nao');
+            const randomX = Math.floor(Math.random() * window.innerWidth);
+            const randomY = Math.floor(Math.random() * window.innerHeight);
+            buttonNao.style.left = `${randomX}px`;
+            buttonNao.style.top = `${randomY}px`;
+        }
+    </script>
+</body>
+</html>
